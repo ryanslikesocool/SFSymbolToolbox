@@ -10,7 +10,7 @@ public extension SwiftUI.Image {
 	///   If `nil`, SwiftUI uses the main `Bundle`.
 	///   Defaults to `nil`.
 	init(
-		_ name: borrowing CustomSymbol,
+		_ name: CustomSymbol,
 		bundle: Bundle? = nil
 	) {
 		self.init(name.rawValue, bundle: bundle)
@@ -34,7 +34,7 @@ public extension SwiftUI.Image {
 	///   Defaults to `nil`.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	init(
-		_ name: borrowing CustomSymbol,
+		_ name: CustomSymbol,
 		variableValue: Double?,
 		bundle: Bundle? = nil
 	) {
@@ -51,7 +51,7 @@ public extension SwiftUI.Image {
 	///   - label: The label associated with the image.
 	///   SwiftUI uses the label for accessibility.
 	init(
-		_ name: borrowing CustomSymbol,
+		_ name: CustomSymbol,
 		bundle: Bundle? = nil,
 		label: Text
 	) {
@@ -78,7 +78,7 @@ public extension SwiftUI.Image {
 	///   SwiftUI uses the label for accessibility.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	init(
-		_ name: borrowing CustomSymbol,
+		_ name: CustomSymbol,
 		variableValue: Double?,
 		bundle: Bundle? = nil,
 		label: Text
@@ -96,7 +96,7 @@ public extension SwiftUI.Image {
 	///   If `nil`, SwiftUI uses the main `Bundle`.
 	///   Defaults to `nil`.
 	init(
-		decorative name: borrowing CustomSymbol,
+		decorative name: CustomSymbol,
 		bundle: Bundle? = nil
 	) {
 		self.init(decorative: name.rawValue, bundle: bundle)
@@ -122,7 +122,7 @@ public extension SwiftUI.Image {
 	///   Defaults to `nil`.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	init(
-		decorative name: borrowing CustomSymbol,
+		decorative name: CustomSymbol,
 		variableValue: Double?,
 		bundle: Bundle? = nil
 	) {
@@ -141,7 +141,7 @@ public extension SwiftUI.Image {
 	/// - Parameter systemName: The name of the system symbol image.
 	/// Use the SF Symbols app to look up the names of system symbol images.
 	@available(iOS 13, macCatalyst 13, macOS 11, tvOS 13, watchOS 6, *)
-	init(systemName: borrowing SystemSymbol) {
+	init(systemName: SystemSymbol) {
 		self.init(systemName: systemName.rawValue)
 	}
 
@@ -162,7 +162,7 @@ public extension SwiftUI.Image {
 	///   If the symbol doesn’t support variable values, this parameter has no effect.
 	///   Use the SF Symbols app to look up which symbols support variable values.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
-	init(systemName: borrowing SystemSymbol, variableValue: Double?) {
+	init(systemName: SystemSymbol, variableValue: Double?) {
 		self.init(systemName: systemName.rawValue, variableValue: variableValue)
 	}
 }

@@ -44,7 +44,7 @@ public extension NSImage {
 	/// This can be a name you assigned to the image or the name of an image file in your app bundle.
 	/// - Returns: The `NSImage` object associated with the specified name or `nil` if no such image was found.
 	convenience init?(
-		named name: borrowing CustomSymbol
+		named name: CustomSymbol
 	) {
 		self.init(named: name.rawValue)
 	}
@@ -60,7 +60,7 @@ public extension NSImage {
 	/// - Returns: A symbol image based on the name you specify; otherwise `nil` if the method couldn’t find a suitable image.
 	@available(macOS 11, *)
 	convenience init?(
-		systemSymbolName name: borrowing SystemSymbol,
+		systemSymbolName name: SystemSymbol,
 		accessibilityDescription description: String?
 	) {
 		self.init(systemSymbolName: name.rawValue, accessibilityDescription: description)
@@ -79,7 +79,7 @@ public extension NSImage {
 	///   - description: The accessibility description for the symbol image, if any.
 	@available(macOS 13, *)
 	convenience init?(
-		systemSymbolName name: borrowing SystemSymbol,
+		systemSymbolName name: SystemSymbol,
 		variableValue value: Double,
 		accessibilityDescription description: String?
 	) {
@@ -95,7 +95,7 @@ public extension NSImage {
 	///   - value: The value the system uses to customize the symbol’s content, between `0` and `1`.
 	@available(macOS 13, *)
 	convenience init?(
-		symbolName name: borrowing CustomSymbol,
+		symbolName name: CustomSymbol,
 		variableValue value: Double
 	) {
 		self.init(symbolName: name.rawValue, variableValue: value)
@@ -111,7 +111,7 @@ public extension NSImage {
 	///   - value: The value the system uses to customize the symbol’s content, between `0` and `1`.
 	@available(macOS 13, *)
 	convenience init?(
-		symbolName name: borrowing CustomSymbol,
+		symbolName name: CustomSymbol,
 		bundle: Bundle?,
 		variableValue value: Double
 	) {

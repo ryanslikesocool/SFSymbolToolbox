@@ -13,7 +13,7 @@ public extension SwiftUI.Label where
 	///   - name:
 	nonisolated init<S>(
 		_ title: S,
-		image name: borrowing CustomSymbol
+		image name: CustomSymbol
 	) where
 		S: StringProtocol
 	{
@@ -27,7 +27,7 @@ public extension SwiftUI.Label where
 	///   - name:
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		image name: borrowing CustomSymbol
+		image name: CustomSymbol
 	) {
 		self.init(titleKey, image: name.rawValue)
 	}
@@ -39,7 +39,7 @@ public extension SwiftUI.Label where
 	///   - name:
 	nonisolated init<S>(
 		_ title: S,
-		systemImage name: borrowing SystemSymbol
+		systemImage name: SystemSymbol
 	) where
 		S: StringProtocol
 	{
@@ -53,7 +53,7 @@ public extension SwiftUI.Label where
 	///   - name:
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage name: borrowing SystemSymbol
+		systemImage name: SystemSymbol
 	) {
 		self.init(titleKey, systemImage: name.rawValue)
 	}

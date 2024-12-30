@@ -6,10 +6,10 @@ public extension ImageResource {
 	/// Creates an image from a resource with the specified name in the given bundle.
 	///
 	/// - Parameters:
-	///   - name:
+	///   - name: The name of the image resource to lookup.
 	///   - bundle:
 	init(
-		name: borrowing CustomSymbol,
+		name: CustomSymbol,
 		bundle: Bundle
 	) {
 		self.init(name: name.rawValue, bundle: bundle)

@@ -2,6 +2,8 @@
 import AppKit
 
 public extension TemplateSymbol {
+	// MARK: A
+
 	/// The symbol for
 	/// [`actionTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/actionTemplateName)\.
 	static var action: Self { Self(NSImage.actionTemplateName) }
@@ -9,6 +11,8 @@ public extension TemplateSymbol {
 	/// The symbol for
 	/// [`addTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/addTemplateName)\.
 	static var add: Self { Self(NSImage.addTemplateName) }
+
+	// MARK: B
 
 	/// The symbol for
 	/// [`bluetoothTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/bluetoothTemplateName)\.
@@ -18,9 +22,13 @@ public extension TemplateSymbol {
 	/// [`bookmarksTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/bookmarksTemplateName)\.
 	static var bookmarks: Self { Self(NSImage.bookmarksTemplateName) }
 
+	// MARK: C
+
 	/// The symbol for
 	/// [`columnViewTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/columnViewTemplateName)\.
 	static var columnView: Self { Self(NSImage.columnViewTemplateName) }
+
+	// MARK: E
 
 	/// The symbol for
 	/// [`enterFullScreenTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/enterFullScreenTemplateName)\.
@@ -30,6 +38,8 @@ public extension TemplateSymbol {
 	/// [`exitFullScreenTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/exitFullScreenTemplateName)\.
 	static var exitFullScreen: Self { Self(NSImage.exitFullScreenTemplateName) }
 
+	// MARK: F
+
 	/// The symbol for
 	/// [`flowViewTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/flowViewTemplateName)\.
 	static var flowView: Self { Self(NSImage.flowViewTemplateName) }
@@ -37,6 +47,8 @@ public extension TemplateSymbol {
 	/// The symbol for
 	/// [`followLinkFreestandingTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/followLinkFreestandingTemplateName)\.
 	static var followLinkFreestanding: Self { Self(NSImage.followLinkFreestandingTemplateName) }
+
+	// MARK: G
 
 	/// The symbol for
 	/// [`goBackTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/goBackTemplateName)\.
@@ -54,9 +66,13 @@ public extension TemplateSymbol {
 	/// [`goRightTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/goRightTemplateName)\.
 	static var goRight: Self { Self(NSImage.goRightTemplateName) }
 
+	// MARK: H
+
 	/// The symbol for
 	/// [`homeTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/homeTemplateName)\.
 	static var home: Self { Self(NSImage.homeTemplateName) }
+
+	// MARK: I
 
 	/// The symbol for
 	/// [`iChatTheaterTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/iChatTheaterTemplateName)\.
@@ -69,6 +85,8 @@ public extension TemplateSymbol {
 	/// The symbol for
 	/// [`invalidDataFreestandingTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/invalidDataFreestandingTemplateName)\.
 	static var invalidDataFreestanding: Self { Self(NSImage.invalidDataFreestandingTemplateName) }
+
+	// MARK: L
 
 	/// The symbol for
 	/// [`leftFacingTriangleTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/leftFacingTriangleTemplateName)\.
@@ -86,6 +104,8 @@ public extension TemplateSymbol {
 	/// [`lockUnlockedTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/lockUnlockedTemplateName)\.
 	static var lockUnlocked: Self { Self(NSImage.lockUnlockedTemplateName) }
 
+	// MARK: M
+
 	/// The symbol for
 	/// [`menuMixedStateTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/menuMixedStateTemplateName)\.
 	static var menuMixedState: Self { Self(NSImage.menuMixedStateTemplateName) }
@@ -94,21 +114,27 @@ public extension TemplateSymbol {
 	/// [`menuOnStateTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/menuOnStateTemplateName)\.
 	static var menuOnState: Self { Self(NSImage.menuOnStateTemplateName) }
 
+	// MARK: P
+
 	/// The symbol for
 	/// [`pathTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/pathTemplateName)\.
 	static var path: Self { Self(NSImage.pathTemplateName) }
+
+	// MARK: Q
 
 	/// The symbol for
 	/// [`quickLookTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/quickLookTemplateName)\.
 	static var quickLook: Self { Self(NSImage.quickLookTemplateName) }
 
-	/// The symbol for
-	/// [`refreshFreestandingTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/refreshFreestandingTemplateName)\.
-	static var refreshFreestanding: Self { Self(NSImage.refreshFreestandingTemplateName) }
+	// MARK: R
 
 	/// The symbol for
 	/// [`refreshTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/refreshTemplateName)\.
 	static var refresh: Self { Self(NSImage.refreshTemplateName) }
+
+	/// The symbol for
+	/// [`refreshFreestandingTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/refreshFreestandingTemplateName)\.
+	static var refreshFreestanding: Self { Self(NSImage.refreshFreestandingTemplateName) }
 
 	/// The symbol for
 	/// [`removeTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/removeTemplateName)\.
@@ -121,6 +147,8 @@ public extension TemplateSymbol {
 	/// The symbol for
 	/// [`rightFacingTriangleTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/rightFacingTriangleTemplateName)\.
 	static var rightFacingTriangle: Self { Self(NSImage.rightFacingTriangleTemplateName) }
+
+	// MARK: S
 
 	/// The symbol for
 	/// [`shareTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/shareTemplateName)\.
@@ -135,11 +163,11 @@ public extension TemplateSymbol {
 	static var smartBadge: Self { Self(NSImage.smartBadgeTemplateName) }
 
 	/// The symbol for
-	/// [`stopProgressFreestandingTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/stopProgressFreestandingTemplateName)\.
-	static var stopProgressFreestanding: Self { Self(NSImage.stopProgressFreestandingTemplateName) }
-
-	/// The symbol for
 	/// [`stopProgressTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/stopProgressTemplateName)\.
 	static var stopProgress: Self { Self(NSImage.stopProgressTemplateName) }
+
+	/// The symbol for
+	/// [`stopProgressFreestandingTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/stopProgressFreestandingTemplateName)\.
+	static var stopProgressFreestanding: Self { Self(NSImage.stopProgressFreestandingTemplateName) }
 }
 #endif

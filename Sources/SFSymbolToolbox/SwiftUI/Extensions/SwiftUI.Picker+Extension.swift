@@ -22,7 +22,7 @@ public extension SwiftUI.Picker where
 	///   - content: A view that contains the set of options.
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		selection: Binding<SelectionValue>,
 		@ViewBuilder content: () -> Content
 	) where
@@ -48,7 +48,7 @@ public extension SwiftUI.Picker where
 	///   - content: A view that contains the set of options.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		selection: Binding<SelectionValue>,
 		@ViewBuilder content: () -> Content
 	) {
@@ -79,7 +79,7 @@ public extension SwiftUI.Picker where
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	nonisolated init<S, C>(
 		_ title: S,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		sources: C,
 		selection: KeyPath<C.Element, Binding<SelectionValue>>,
 		@ViewBuilder content: () -> Content
@@ -115,7 +115,7 @@ public extension SwiftUI.Picker where
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	nonisolated init<C>(
 		_ titleKey: LocalizedStringKey,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		sources: C,
 		selection: KeyPath<C.Element, Binding<SelectionValue>>,
 		@ViewBuilder content: () -> Content
@@ -145,7 +145,7 @@ public extension SwiftUI.Picker where
 	@available(iOS 18, macCatalyst 18, macOS 15, tvOS 18, visionOS 2, watchOS 11, *)
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		selection: Binding<SelectionValue>,
 		@ViewBuilder content: () -> Content,
 		@ViewBuilder currentValueLabel: () -> some View
@@ -174,7 +174,7 @@ public extension SwiftUI.Picker where
 	@available(iOS 18, macCatalyst 18, macOS 15, tvOS 18, visionOS 2, watchOS 11, *)
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		selection: Binding<SelectionValue>,
 		@ViewBuilder content: () -> Content,
 		@ViewBuilder currentValueLabel: () -> some View
@@ -207,7 +207,7 @@ public extension SwiftUI.Picker where
 	@available(iOS 18, macCatalyst 18, macOS 15, tvOS 18, visionOS 2, watchOS 11, *)
 	nonisolated init<S, C>(
 		_ title: S,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		sources: C,
 		selection: KeyPath<C.Element, Binding<SelectionValue>>,
 		@ViewBuilder content: () -> Content,
@@ -245,7 +245,7 @@ public extension SwiftUI.Picker where
 	@available(iOS 18, macCatalyst 18, macOS 15, tvOS 18, visionOS 2, watchOS 11, *)
 	nonisolated init<C>(
 		_ titleKey: LocalizedStringKey,
-		systemImage: borrowing SystemSymbol,
+		systemImage: SystemSymbol,
 		sources: C,
 		selection: KeyPath<C.Element, Binding<SelectionValue>>,
 		@ViewBuilder content: () -> Content,

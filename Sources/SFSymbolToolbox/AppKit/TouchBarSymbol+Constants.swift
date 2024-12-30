@@ -2,25 +2,28 @@
 import AppKit
 
 public extension TouchBarSymbol {
-	/// The symbol for
-	/// [`touchBarAddDetailTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAddDetailTemplateName)\.
-	static var addDetail: Self { Self(NSImage.touchBarAddDetailTemplateName) }
+
+	// MARK: A
 
 	/// The symbol for
 	/// [`touchBarAddTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAddTemplateName)\.
 	static var add: Self { Self(NSImage.touchBarAddTemplateName) }
 
 	/// The symbol for
+	/// [`touchBarAddDetailTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAddDetailTemplateName)\.
+	static var addDetail: Self { Self(NSImage.touchBarAddDetailTemplateName) }
+
+	/// The symbol for
 	/// [`touchBarAlarmTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAlarmTemplateName)\.
 	static var alarm: Self { Self(NSImage.touchBarAlarmTemplateName) }
 
 	/// The symbol for
-	/// [`touchBarAudioInputMuteTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAudioInputMuteTemplateName)\.
-	static var audioInputMute: Self { Self(NSImage.touchBarAudioInputMuteTemplateName) }
-
-	/// The symbol for
 	/// [`touchBarAudioInputTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAudioInputTemplateName)\.
 	static var audioInput: Self { Self(NSImage.touchBarAudioInputTemplateName) }
+
+	/// The symbol for
+	/// [`touchBarAudioInputMuteTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAudioInputMuteTemplateName)\.
+	static var audioInputMute: Self { Self(NSImage.touchBarAudioInputMuteTemplateName) }
 
 	/// The symbol for
 	/// [`touchBarAudioOutputMuteTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAudioOutputMuteTemplateName)\.
@@ -42,9 +45,13 @@ public extension TouchBarSymbol {
 	/// [`touchBarAudioOutputVolumeOffTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarAudioOutputVolumeOffTemplateName)\.
 	static var audioOutputVolumeOff: Self { Self(NSImage.touchBarAudioOutputVolumeOffTemplateName) }
 
+	// MARK: B
+
 	/// The symbol for
 	/// [`touchBarBookmarksTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarBookmarksTemplateName)\.
 	static var bookmarks: Self { Self(NSImage.touchBarBookmarksTemplateName) }
+
+	// MARK: C
 
 	/// The symbol for
 	/// [`touchBarCommunicationAudioTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarCommunicationAudioTemplateName)\.
@@ -58,6 +65,8 @@ public extension TouchBarSymbol {
 	/// [`touchBarComposeTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarComposeTemplateName)\.
 	static var compose: Self { Self(NSImage.touchBarComposeTemplateName) }
 
+	// MARK: D
+
 	/// The symbol for
 	/// [`touchBarDeleteTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarDeleteTemplateName)\.
 	static var delete: Self { Self(NSImage.touchBarDeleteTemplateName) }
@@ -66,6 +75,8 @@ public extension TouchBarSymbol {
 	/// [`touchBarDownloadTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarDownloadTemplateName)\.
 	static var download: Self { Self(NSImage.touchBarDownloadTemplateName) }
 
+	// MARK: E
+
 	/// The symbol for
 	/// [`touchBarEnterFullScreenTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarEnterFullScreenTemplateName)\.
 	static var enterFullScreen: Self { Self(NSImage.touchBarEnterFullScreenTemplateName) }
@@ -73,6 +84,8 @@ public extension TouchBarSymbol {
 	/// The symbol for
 	/// [`touchBarExitFullScreenTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarExitFullScreenTemplateName)\.
 	static var exitFullScreen: Self { Self(NSImage.touchBarExitFullScreenTemplateName) }
+
+	// MARK: F
 
 	/// The symbol for
 	/// [`touchBarFastForwardTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarFastForwardTemplateName)\.
@@ -89,6 +102,8 @@ public extension TouchBarSymbol {
 	/// The symbol for
 	/// [`touchBarFolderTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarFolderTemplateName)\.
 	static var folder: Self { Self(NSImage.touchBarFolderTemplateName) }
+
+	// MARK: G
 
 	/// The symbol for
 	/// [`touchBarGetInfoTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarGetInfoTemplateName)\.
@@ -110,21 +125,31 @@ public extension TouchBarSymbol {
 	/// [`touchBarGoUpTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarGoUpTemplateName)\.
 	static var goUp: Self { Self(NSImage.touchBarGoUpTemplateName) }
 
+	// MARK: H
+
 	/// The symbol for
 	/// [`touchBarHistoryTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarHistoryTemplateName)\.
 	static var history: Self { Self(NSImage.touchBarHistoryTemplateName) }
+
+	// MARK: I
 
 	/// The symbol for
 	/// [`touchBarIconViewTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarIconViewTemplateName)\.
 	static var iconView: Self { Self(NSImage.touchBarIconViewTemplateName) }
 
+	// MARK: L
+
 	/// The symbol for
 	/// [`touchBarListViewTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarListViewTemplateName)\.
 	static var listView: Self { Self(NSImage.touchBarListViewTemplateName) }
 
+	// MARK: M
+
 	/// The symbol for
 	/// [`touchBarMailTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarMailTemplateName)\.
 	static var mail: Self { Self(NSImage.touchBarMailTemplateName) }
+
+	// MARK: N
 
 	/// The symbol for
 	/// [`touchBarNewFolderTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarNewFolderTemplateName)\.
@@ -134,25 +159,37 @@ public extension TouchBarSymbol {
 	/// [`touchBarNewMessageTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarNewMessageTemplateName)\.
 	static var newMessage: Self { Self(NSImage.touchBarNewMessageTemplateName) }
 
+	// MARK: O
+
 	/// The symbol for
 	/// [`touchBarOpenInBrowserTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarOpenInBrowserTemplateName)\.
 	static var openInBrowser: Self { Self(NSImage.touchBarOpenInBrowserTemplateName) }
+
+	// MARK: P
 
 	/// The symbol for
 	/// [`touchBarPauseTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarPauseTemplateName)\.
 	static var pause: Self { Self(NSImage.touchBarPauseTemplateName) }
 
 	/// The symbol for
-	/// [`touchBarPlayPauseTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarPlayPauseTemplateName)\.
-	static var playPause: Self { Self(NSImage.touchBarPlayPauseTemplateName) }
-
-	/// The symbol for
 	/// [`touchBarPlayTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarPlayTemplateName)\.
 	static var play: Self { Self(NSImage.touchBarPlayTemplateName) }
 
 	/// The symbol for
+	/// [`touchBarPlayPauseTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarPlayPauseTemplateName)\.
+	static var playPause: Self { Self(NSImage.touchBarPlayPauseTemplateName) }
+
+	/// The symbol for
+	/// [`touchBarPlayheadTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarPlayheadTemplateName)\.
+	static var playhead: Self { Self(NSImage.touchBarPlayheadTemplateName) }
+
+	// MARK: Q
+
+	/// The symbol for
 	/// [`touchBarQuickLookTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarQuickLookTemplateName)\.
 	static var quickLook: Self { Self(NSImage.touchBarQuickLookTemplateName) }
+
+	// MARK: R
 
 	/// The symbol for
 	/// [`touchBarRecordStartTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarRecordStartTemplateName)\.
@@ -182,6 +219,8 @@ public extension TouchBarSymbol {
 	/// [`touchBarRotateRightTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarRotateRightTemplateName)\.
 	static var rotateRight: Self { Self(NSImage.touchBarRotateRightTemplateName) }
 
+	// MARK: S
+
 	/// The symbol for
 	/// [`touchBarSearchTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSearchTemplateName)\.
 	static var search: Self { Self(NSImage.touchBarSearchTemplateName) }
@@ -195,6 +234,10 @@ public extension TouchBarSymbol {
 	static var sidebar: Self { Self(NSImage.touchBarSidebarTemplateName) }
 
 	/// The symbol for
+	/// [`touchBarSkipAheadTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipAheadTemplateName)\.
+	static var skipAhead: Self { Self(NSImage.touchBarSkipAheadTemplateName) }
+
+	/// The symbol for
 	/// [`touchBarSkipAhead15SecondsTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipAhead15SecondsTemplateName)\.
 	static var skipAhead15Seconds: Self { Self(NSImage.touchBarSkipAhead15SecondsTemplateName) }
 
@@ -203,8 +246,8 @@ public extension TouchBarSymbol {
 	static var skipAhead30Seconds: Self { Self(NSImage.touchBarSkipAhead30SecondsTemplateName) }
 
 	/// The symbol for
-	/// [`touchBarSkipAheadTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipAheadTemplateName)\.
-	static var skipAhead: Self { Self(NSImage.touchBarSkipAheadTemplateName) }
+	/// [`touchBarSkipBackTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipBackTemplateName)\.
+	static var skipBack: Self { Self(NSImage.touchBarSkipBackTemplateName) }
 
 	/// The symbol for
 	/// [`touchBarSkipBack15SecondsTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipBack15SecondsTemplateName)\.
@@ -213,10 +256,6 @@ public extension TouchBarSymbol {
 	/// The symbol for
 	/// [`touchBarSkipBack30SecondsTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipBack30SecondsTemplateName)\.
 	static var skipBack30Seconds: Self { Self(NSImage.touchBarSkipBack30SecondsTemplateName) }
-
-	/// The symbol for
-	/// [`touchBarSkipBackTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipBackTemplateName)\.
-	static var skipBack: Self { Self(NSImage.touchBarSkipBackTemplateName) }
 
 	/// The symbol for
 	/// [`touchBarSkipToEndTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSkipToEndTemplateName)\.
@@ -229,6 +268,8 @@ public extension TouchBarSymbol {
 	/// The symbol for
 	/// [`touchBarSlideshowTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarSlideshowTemplateName)\.
 	static var slideshow: Self { Self(NSImage.touchBarSlideshowTemplateName) }
+
+	// MARK: T
 
 	/// The symbol for
 	/// [`touchBarTagIconTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarTagIconTemplateName)\.
@@ -274,6 +315,12 @@ public extension TouchBarSymbol {
 	/// [`touchBarTextUnderlineTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarTextUnderlineTemplateName)\.
 	static var textUnderline: Self { Self(NSImage.touchBarTextUnderlineTemplateName) }
 
+	// MARK: U
+
+	/// The symbol for
+	/// [`touchBarUserTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarUserTemplateName)\.
+	static var user: Self { Self(NSImage.touchBarUserTemplateName) }
+
 	/// The symbol for
 	/// [`touchBarUserAddTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarUserAddTemplateName)\.
 	static var userAdd: Self { Self(NSImage.touchBarUserAddTemplateName) }
@@ -282,9 +329,7 @@ public extension TouchBarSymbol {
 	/// [`touchBarUserGroupTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarUserGroupTemplateName)\.
 	static var userGroup: Self { Self(NSImage.touchBarUserGroupTemplateName) }
 
-	/// The symbol for
-	/// [`touchBarUserTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarUserTemplateName)\.
-	static var user: Self { Self(NSImage.touchBarUserTemplateName) }
+	// MARK: V
 
 	/// The symbol for
 	/// [`touchBarVolumeDownTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarVolumeDownTemplateName)\.
@@ -293,9 +338,5 @@ public extension TouchBarSymbol {
 	/// The symbol for
 	/// [`touchBarVolumeUpTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarVolumeUpTemplateName)\.
 	static var volumeUp: Self { Self(NSImage.touchBarVolumeUpTemplateName) }
-
-	/// The symbol for
-	/// [`touchBarPlayheadTemplateName`](https://developer.apple.com/documentation/appkit/nsimage/touchBarPlayheadTemplateName)\.
-	static var playhead: Self { Self(NSImage.touchBarPlayheadTemplateName) }
 }
 #endif

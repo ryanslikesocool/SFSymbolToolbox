@@ -5,6 +5,8 @@ import SwiftUI
 public extension SwiftUI.Picker where
 	Label == SwiftUI.Label<Text, Image>
 {
+	// MARK: - init(_:systemImage:selection:content:)
+
 	/// Creates a picker that generates its label from a string and system image.
 	///
 	/// This initializer creates a
@@ -54,6 +56,128 @@ public extension SwiftUI.Picker where
 	) {
 		self.init(titleKey, systemImage: systemImage.rawValue, selection: selection, content: content)
 	}
+
+	// MARK: - init(_:image:bundle:selection:content:)
+
+	/// Creates a picker that generates its label from a string and image name.
+	///
+	/// This initializer creates a
+	/// [`Label`](https://developer.apple.com/documentation/swiftui/label)
+	/// view on your behalf, and treats the title similar to
+	/// [`init(_:)`](https://developer.apple.com/documentation/swiftui/text/init(_:))\.
+	/// See
+	/// [`Text`](https://developer.apple.com/documentation/swiftui/text)
+	/// for more information about localizing strings.
+	///
+	/// - Parameters:
+	///   - title: A string that describes the purpose of selecting an option.
+	///   - image: The name of the image resource to lookup.
+	///   - bundle: The bundle to search for the image resource.
+	///   If `nil`, SwiftUI uses the main `Bundle`.
+	///   Defaults to `nil`.
+	///   - selection: A binding to a property that determines the currently-selected option.
+	///   - content: A view that contains the set of options.
+	nonisolated init<S>(
+		_ title: S,
+		image: String,
+		bundle: Bundle? = nil,
+		selection: Binding<SelectionValue>,
+		@ViewBuilder content: () -> Content
+	) where
+		S: StringProtocol
+	{
+		self.init(selection: selection, content: content, label: { Label(title, image: image, bundle: bundle) })
+	}
+
+	/// Creates a picker that generates its label from a localized string key and image name.
+	///
+	/// This initializer creates a
+	/// [`Label`](https://developer.apple.com/documentation/swiftui/label)
+	/// view on your behalf, and treats the localized key similar to
+	/// [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/swiftui/text/init(_:tablename:bundle:comment:))\.
+	/// See
+	/// [`Text`](https://developer.apple.com/documentation/swiftui/text)
+	/// for more information about localizing strings.
+	///
+	/// - Parameters:
+	///   - titleKey: A localized string key that describes the purpose of selecting an option.
+	///   - image: The name of the image resource to lookup.
+	///   - bundle: The bundle to search for the image resource.
+	///   If `nil`, SwiftUI uses the main `Bundle`.
+	///   Defaults to `nil`.
+	///   - selection: A binding to a property that determines the currently-selected option.
+	///   - content: A view that contains the set of options.
+	nonisolated init(
+		_ titleKey: LocalizedStringKey,
+		image: String,
+		bundle: Bundle? = nil,
+		selection: Binding<SelectionValue>,
+		@ViewBuilder content: () -> Content
+	) {
+		self.init(selection: selection, content: content, label: { Label(titleKey, image: image, bundle: bundle) })
+	}
+
+	// MARK: CustomSymbol
+
+	/// Creates a picker that generates its label from a string and image name.
+	///
+	/// This initializer creates a
+	/// [`Label`](https://developer.apple.com/documentation/swiftui/label)
+	/// view on your behalf, and treats the title similar to
+	/// [`init(_:)`](https://developer.apple.com/documentation/swiftui/text/init(_:))\.
+	/// See
+	/// [`Text`](https://developer.apple.com/documentation/swiftui/text)
+	/// for more information about localizing strings.
+	///
+	/// - Parameters:
+	///   - title: A string that describes the purpose of selecting an option.
+	///   - image: The name of the image resource to lookup.
+	///   - bundle: The bundle to search for the image resource.
+	///   If `nil`, SwiftUI uses the main `Bundle`.
+	///   Defaults to `nil`.
+	///   - selection: A binding to a property that determines the currently-selected option.
+	///   - content: A view that contains the set of options.
+	nonisolated init<S>(
+		_ title: S,
+		image: CustomSymbol,
+		bundle: Bundle? = nil,
+		selection: Binding<SelectionValue>,
+		@ViewBuilder content: () -> Content
+	) where
+		S: StringProtocol
+	{
+		self.init(title, image: image.rawValue, bundle: bundle, selection: selection, content: content)
+	}
+
+	/// Creates a picker that generates its label from a localized string key and image name.
+	///
+	/// This initializer creates a
+	/// [`Label`](https://developer.apple.com/documentation/swiftui/label)
+	/// view on your behalf, and treats the localized key similar to
+	/// [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/swiftui/text/init(_:tablename:bundle:comment:))\.
+	/// See
+	/// [`Text`](https://developer.apple.com/documentation/swiftui/text)
+	/// for more information about localizing strings.
+	///
+	/// - Parameters:
+	///   - titleKey: A localized string key that describes the purpose of selecting an option.
+	///   - image: The name of the image resource to lookup.
+	///   - bundle: The bundle to search for the image resource.
+	///   If `nil`, SwiftUI uses the main `Bundle`.
+	///   Defaults to `nil`.
+	///   - selection: A binding to a property that determines the currently-selected option.
+	///   - content: A view that contains the set of options.
+	nonisolated init(
+		_ titleKey: LocalizedStringKey,
+		image: CustomSymbol,
+		bundle: Bundle? = nil,
+		selection: Binding<SelectionValue>,
+		@ViewBuilder content: () -> Content
+	) {
+		self.init(titleKey, image: image.rawValue, bundle: bundle, selection: selection, content: content)
+	}
+
+	// MARK: - init(_:systemImage:sources:selection:content:)
 
 	/// Creates a picker bound to a collection of bindings that generates its label from a string.
 	///
@@ -126,6 +250,8 @@ public extension SwiftUI.Picker where
 		self.init(titleKey, systemImage: systemImage.rawValue, sources: sources, selection: selection, content: content)
 	}
 
+	// MARK: - init(_:systemImage:selection:content:currentValueLabel:)
+
 	/// Creates a picker that accepts a custom current value and generates its label from a string and system image.
 	///
 	/// This initializer creates a
@@ -181,6 +307,8 @@ public extension SwiftUI.Picker where
 	) {
 		self.init(titleKey, systemImage: systemImage.rawValue, selection: selection, content: content, currentValueLabel: currentValueLabel)
 	}
+
+	// MARK: - init(_:systemImage:sources:selection:content:currentValueLabel:)
 
 	/// Creates a picker bound to a collection of bindings that accepts a custom current value label and generates its label from a string.
 	///

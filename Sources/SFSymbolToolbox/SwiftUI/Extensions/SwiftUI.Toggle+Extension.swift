@@ -5,6 +5,8 @@ import SwiftUI
 public extension SwiftUI.Toggle where
 	Label == SwiftUI.Label<Text, Image>
 {
+	// MARK: - init(_:systemImage:isOn:)
+
 	/// Creates a toggle that generates its label from a string and system image.
 	///
 	/// This initializer creates a
@@ -50,6 +52,8 @@ public extension SwiftUI.Toggle where
 	) {
 		self.init(titleKey, systemImage: systemImage.rawValue, isOn: isOn)
 	}
+
+	// MARK: - init(_:systemImage:sources:isOn:)
 
 	/// Creates a toggle representing a collection of values that generates its label from a string.
 	///

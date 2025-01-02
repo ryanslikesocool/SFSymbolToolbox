@@ -2,6 +2,8 @@
 import UIKit
 
 public extension UIImage {
+	// MARK: CustomSymbol
+
 	/// Creates an image object from the specified named asset.
 	///
 	/// When searching the asset catalog, this method prefers an asset containing a symbol image over an asset with the same name containing a bitmap image.
@@ -59,7 +61,7 @@ public extension UIImage {
 	///   Specify `nil` to search the app’s main bundle.
 	///   - traitConfiguration: The traits associated with the intended environment for the image.
 	///   Use this parameter to ensure that the system loads the correct variant of the image.
-	///   If you specify `nil`, this method uses the traits associated with the main screen.
+	///   If you specify `nil`, this initializer uses the traits associated with the main screen.
 	@available(iOS 8, macCatalyst 13.1, tvOS 9, visionOS 1, *)
 	convenience init?(
 		named name: CustomSymbol,
@@ -130,6 +132,117 @@ public extension UIImage {
 		configuration: UIImage.Configuration? = nil
 	) {
 		self.init(named: name.rawValue, in: bundle, variableValue: variableValue, configuration: configuration)
+	}
+
+	// MARK: SystemSymbol
+
+	/// Creates an image object that contains a system symbol image.
+	///
+	/// Use this method to retrieve system-defined symbol images.
+	/// To retrieve a custom symbol image you store in an asset catalog, use the
+	/// [`init(named:)`]( https://developer.apple.com/documentation/uikit/uiimage/1624146-init )
+	/// initializer instead.
+	///
+	/// This method checks the system caches for an image with the name you specify and returns the variant of that image that’s best suited for the main screen.
+	///
+	/// If a matching image object isn’t in the cache, this method creates the image from the specified system symbol image.
+	/// The system may purge cached image data at any time to free up memory.
+	/// Purging occurs only for unused images that are in the cache.
+	///
+	/// To look up the names of system symbol images, download the SF Symbols app from
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	///
+	/// - Parameter name: The name of the system symbol image.
+	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, watchOS 6, *)
+	convenience init?(
+		systemName name: SystemSymbol
+	) {
+		self.init(systemName: name.rawValue)
+	}
+
+	/// Creates an image object that contains a system symbol image appropriate for the specified traits.
+	///
+	/// Use this method to retrieve system-defined symbol images.
+	/// To retrieve a custom symbol image you store in an asset catalog, use the
+	/// [`init(named:in:compatibleWith:)`]( https://developer.apple.com/documentation/uikit/uiimage/1624154-init )
+	/// initializer instead.
+	///
+	/// This method checks the system caches for an image with the name you specify and returns the variant of that image that’s best suited for traits.
+	///
+	/// If a matching image object isn’t in the cache, this method creates the image from the system symbol image.
+	/// The system may purge cached image data at any time to free up memory.
+	/// Purging occurs only for unused images that are in the cache.
+	///
+	/// To look up the names of system symbol images, download the SF Symbols app from
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	///
+	/// - Parameters:
+	///   - name: The name of the system symbol image.
+	///   - traitCollection: The traits associated with the intended environment for the image.
+	///   Use this parameter to ensure that the correct variant of the image is loaded.
+	///   If you specify `nil`, this initializer uses the traits associated with the main screen.
+	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, *)
+	convenience init?(
+		systemName name: SystemSymbol,
+		compatibleWith traitCollection: UITraitCollection?
+	) {
+		self.init(systemName: name.rawValue, compatibleWith: traitCollection)
+	}
+
+	/// Creates an image object that contains a system symbol image with the specified configuration.
+	///
+	/// Use this method to retrieve system-defined symbol images.
+	/// To retrieve a custom symbol image you store in an asset catalog, use the
+	/// [`init(named:in:with:)`]( https://developer.apple.com/documentation/uikit/uiimage/3294226-init )
+	/// initializer instead.
+	///
+	/// This method checks the system caches for an image with the specified name and returns the variant of that image that’s best suited for the configuration you specify.
+	/// If a matching image object isn’t in the cache, this method creates the image from the system symbol image.
+	///
+	/// The system may purge cached image data at any time to free up memory.
+	/// Purging occurs only for unused images that are in the cache.
+	///
+	/// To look up the names of system symbol images, download the SF Symbols app from
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	///
+	/// - Parameters:
+	///   - name: The name of the system symbol image.
+	///   - configuration: The image configuration the system applies to the image.
+	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, watchOS 6, *)
+	convenience init?(
+		systemName name: SystemSymbol,
+		withConfiguration configuration: UIImage.Configuration?
+	) {
+		self.init(systemName: name.rawValue, withConfiguration: configuration)
+	}
+
+	/// Creates an image object that contains a system symbol image with the configuration and variable value you specify.
+	///
+	/// Use this method to retrieve system-defined symbol images.
+	/// To retrieve a custom symbol image you store in an asset catalog, use the
+	/// [`init(named:in:variableValue:configuration:)`]( https://developer.apple.com/documentation/uikit/uiimage/3955178-init )
+	/// initializer instead.
+	///
+	/// This method checks the system caches for an image with the specified name and returns the variant of that image that’s best suited for the configuration you specify.
+	/// If a matching image object isn’t in the cache, this method creates the image from the system symbol image.
+	///
+	/// The system may purge cached image data at any time to free up memory.
+	/// Purging occurs only for unused images that are in the cache.
+	///
+	/// To look up the names of system symbol images, download the SF Symbols app from
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	///
+	/// - Parameters:
+	///   - name: The name of the system symbol image.
+	///   - variableValue: The value the system uses to customize the image content, between `0` and `1`.
+	///   - configuration: The image configuration the system applies to the image.
+	@available(iOS 16, macCatalyst 16, tvOS 16, visionOS 1, watchOS 9, *)
+	convenience init?(
+		systemName name: SystemSymbol,
+		variableValue: Double,
+		configuration: UIImage.Configuration? = nil
+	) {
+		self.init(systemName: name.rawValue, variableValue: variableValue, configuration: configuration)
 	}
 }
 #endif

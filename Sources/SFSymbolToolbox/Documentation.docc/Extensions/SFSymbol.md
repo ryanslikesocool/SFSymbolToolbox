@@ -1,16 +1,8 @@
-# Quick Start
+# ``SFSymbol``
 
-## Symbol Types
+## Example
 
-By default, the package provides the following concrete symbol types:
-- ``SystemSymbol``
-- ``CustomSymbol``
-- ``TemplateSymbol``
-
-Additional symbol types can be created by implementing ``SFSymbol``.
-
-
-## Declaring Symbols
+### Declaration
 
 `SFSymbol` implements
 [`ExpressibleByStringLiteral`]( https://developer.apple.com/documentation/swift/expressiblebystringliteral ),
@@ -25,7 +17,7 @@ let circle = SystemSymbol("circle")
 ```
 
 
-## Using Symbols
+### Usage
 
 Many overloads are provided by the package to simplify usage.
 ```swift
@@ -38,7 +30,7 @@ SwiftUI.Image(systemName: .circle)
 ```
 
 If a function or initializer doesn't have an overload that takes a concrete symbol type as an argument,
-use the ``SFSymbol/rawValue`` property to access the underlying `String`.
+use the ``rawValue`` property to access the underlying `String`.
 ```swift
 SwiftUI.Image(systemName: SystemSymbol.circle.rawValue)
 ```

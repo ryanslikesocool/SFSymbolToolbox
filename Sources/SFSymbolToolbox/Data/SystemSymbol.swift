@@ -11,3 +11,14 @@ public struct SystemSymbol: SFSymbol {
 		self.rawValue = rawValue
 	}
 }
+
+// MARK: - Convenience
+
+public extension SFSymbol where
+	Self == SystemSymbol
+{
+	/// Create a system symbol image.
+	static func system(_ symbol: Self) -> Self {
+		symbol
+	}
+}

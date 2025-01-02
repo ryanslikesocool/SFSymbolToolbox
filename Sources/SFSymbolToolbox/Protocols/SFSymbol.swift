@@ -5,6 +5,8 @@ public protocol SFSymbol: RawRepresentable, Sendable, Equatable, Hashable, Ident
 	/// The name of the symbol.
 	var rawValue: RawValue { get }
 
+	/// Create a symbol image.
+	///
 	/// - Parameter rawValue: The name of the symbol.
 	init(rawValue: RawValue)
 }
@@ -54,6 +56,10 @@ public extension SFSymbol {
 // MARK: - Intrinsic
 
 public extension SFSymbol {
+	/// Create a symbol image.
+	///
+	/// - Remark: This initializer is an overload for ``init(rawValue:)``
+	///
 	/// - Parameter rawValue: The name of the symbol.
 	init(_ rawValue: RawValue) {
 		self.init(rawValue: rawValue)

@@ -42,7 +42,6 @@ public extension NSImage {
 	///
 	/// - Parameter name: The name associated with the desired image.
 	/// This can be a name you assigned to the image or the name of an image file in your app bundle.
-	/// - Returns: The `NSImage` object associated with the specified name or `nil` if no such image was found.
 	convenience init?(
 		named name: CustomSymbol
 	) {
@@ -57,7 +56,6 @@ public extension NSImage {
 	/// - Parameters:
 	///   - name: The name of the system symbol image.
 	///   - description: The accessibility description for the symbol image, if any.
-	/// - Returns: A symbol image based on the name you specify; otherwise `nil` if the method couldn’t find a suitable image.
 	@available(macOS 11, *)
 	convenience init?(
 		systemSymbolName name: SystemSymbol,

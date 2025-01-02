@@ -16,7 +16,9 @@ public extension SwiftUI.Image {
 	/// - Parameter systemName: The name of the system symbol image.
 	/// Use the SF Symbols app to look up the names of system symbol images.
 	@available(iOS 13, macCatalyst 13, macOS 11, tvOS 13, watchOS 6, *)
-	init(systemName: SystemSymbol) {
+	init(
+		systemName: SystemSymbol
+	) {
 		self.init(systemName: systemName.rawValue)
 	}
 
@@ -37,7 +39,10 @@ public extension SwiftUI.Image {
 	///   If the symbol doesn’t support variable values, this parameter has no effect.
 	///   Use the SF Symbols app to look up which symbols support variable values.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
-	init(systemName: SystemSymbol, variableValue: Double?) {
+	init(
+		systemName: SystemSymbol,
+		variableValue: Double?
+	) {
 		self.init(systemName: systemName.rawValue, variableValue: variableValue)
 	}
 

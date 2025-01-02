@@ -150,7 +150,7 @@ public extension UIImage {
 	/// Purging occurs only for unused images that are in the cache.
 	///
 	/// To look up the names of system symbol images, download the SF Symbols app from
-	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/#sf-symbols ).
 	///
 	/// - Parameter name: The name of the system symbol image.
 	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, watchOS 6, *)
@@ -174,7 +174,7 @@ public extension UIImage {
 	/// Purging occurs only for unused images that are in the cache.
 	///
 	/// To look up the names of system symbol images, download the SF Symbols app from
-	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/#sf-symbols ).
 	///
 	/// - Parameters:
 	///   - name: The name of the system symbol image.
@@ -203,7 +203,7 @@ public extension UIImage {
 	/// Purging occurs only for unused images that are in the cache.
 	///
 	/// To look up the names of system symbol images, download the SF Symbols app from
-	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/#sf-symbols ).
 	///
 	/// - Parameters:
 	///   - name: The name of the system symbol image.
@@ -230,7 +230,7 @@ public extension UIImage {
 	/// Purging occurs only for unused images that are in the cache.
 	///
 	/// To look up the names of system symbol images, download the SF Symbols app from
-	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/#sf-symbols ).
 	///
 	/// - Parameters:
 	///   - name: The name of the system symbol image.

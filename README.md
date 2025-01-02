@@ -1,5 +1,9 @@
 # SFSymbolToolbox
 
+Extensions and conveniences for working with Apple's
+[SF Symbols]( https://developer.apple.com/sf-symbols/ ).
+
+
 ## NOTICE
 
 **This package is under development and not considered production-ready.**<br/>

@@ -1,5 +1,8 @@
 # ``SFSymbolToolbox``
 
+Extensions and conveniences for working with SF Symbols.
+
+
 ## Topics
 
 - <doc:QuickStart>

@@ -7,19 +7,3 @@ public struct CustomSymbol: SFSymbol {
 		self.rawValue = rawValue
 	}
 }
-
-// MARK: - Convenience
-
-public extension SFSymbol where
-	Self == CustomSymbol
-{
-	/// - Parameter rawValue: The name of the symbol.
-	static func custom(_ rawValue: RawValue) -> Self {
-		Self(rawValue: rawValue)
-	}
-
-	/// - Parameter symbol:
-	static func custom(_ symbol: Self) -> Self {
-		symbol
-	}
-}

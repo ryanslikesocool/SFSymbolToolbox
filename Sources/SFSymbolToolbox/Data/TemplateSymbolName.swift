@@ -1,6 +1,6 @@
-/// A template symbol image.
+/// A template symbol image name.
 @frozen
-public struct TemplateSymbol: SFSymbol {
+public struct TemplateSymbolName: SymbolName {
 	public let rawValue: RawValue
 
 	public init(rawValue: RawValue) {
@@ -10,8 +10,8 @@ public struct TemplateSymbol: SFSymbol {
 
 // MARK: - Convenience
 
-public extension SFSymbol where
-	Self == TemplateSymbol
+public extension SymbolName where
+	Self == TemplateSymbolName
 {
 	/// Create a template symbol image.
 	static func template(_ symbol: Self) -> Self {

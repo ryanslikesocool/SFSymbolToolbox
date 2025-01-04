@@ -1,6 +1,6 @@
-/// A custom symbol image.
+/// A custom symbol image name.
 @frozen
-public struct CustomSymbol: SFSymbol {
+public struct CustomSymbolName: SymbolName {
 	public let rawValue: RawValue
 
 	public init(rawValue: RawValue) {
@@ -10,8 +10,8 @@ public struct CustomSymbol: SFSymbol {
 
 // MARK: - Convenience
 
-public extension SFSymbol where
-	Self == CustomSymbol
+public extension SymbolName where
+	Self == CustomSymbolName
 {
 	/// Create a custom symbol image.
 	static func custom(_ symbol: Self) -> Self {

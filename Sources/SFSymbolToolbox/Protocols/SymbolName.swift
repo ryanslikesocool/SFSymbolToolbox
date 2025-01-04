@@ -1,4 +1,4 @@
-public protocol SFSymbol: RawRepresentable, Sendable, Equatable, Hashable, Identifiable, Encodable, Decodable, CustomStringConvertible, ExpressibleByStringLiteral where
+public protocol SymbolName: RawRepresentable, Sendable, Equatable, Hashable, Identifiable, Encodable, Decodable, CustomStringConvertible, ExpressibleByStringLiteral where
 	RawValue == String,
 	StringLiteralType == RawValue
 {
@@ -15,13 +15,13 @@ public protocol SFSymbol: RawRepresentable, Sendable, Equatable, Hashable, Ident
 
 // MARK: Identifiable
 
-public extension SFSymbol {
+public extension SymbolName {
 	var id: RawValue { rawValue }
 }
 
 // MARK: Encodable
 
-public extension SFSymbol {
+public extension SymbolName {
 	func encode(to encoder: any Encoder) throws {
 		var container = encoder.singleValueContainer()
 		try container.encode(rawValue)
@@ -30,7 +30,7 @@ public extension SFSymbol {
 
 // MARK: Decodable
 
-public extension SFSymbol {
+public extension SymbolName {
 	init(from decoder: any Decoder) throws {
 		let container = try decoder.singleValueContainer()
 		try self.init(rawValue: container.decode(RawValue.self))
@@ -39,7 +39,7 @@ public extension SFSymbol {
 
 // MARK: CustomStringConvertible
 
-public extension SFSymbol {
+public extension SymbolName {
 	var description: String {
 		"\(Self.self)(\(rawValue))"
 	}
@@ -47,7 +47,7 @@ public extension SFSymbol {
 
 // MARK: ExpressibleByStringLiteral
 
-public extension SFSymbol {
+public extension SymbolName {
 	init(stringLiteral value: StringLiteralType) {
 		self.init(rawValue: value)
 	}
@@ -55,7 +55,7 @@ public extension SFSymbol {
 
 // MARK: - Intrinsic
 
-public extension SFSymbol {
+public extension SymbolName {
 	/// Create a symbol image.
 	///
 	/// - Remark: This initializer is an overload for ``init(rawValue:)``

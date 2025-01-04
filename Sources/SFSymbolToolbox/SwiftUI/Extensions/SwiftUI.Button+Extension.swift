@@ -26,7 +26,7 @@ public extension Button where
 	///   - action: The action to perform when the user triggers the button.
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		action: @escaping @MainActor () -> Void
 	) where
 		S: StringProtocol
@@ -50,7 +50,7 @@ public extension Button where
 	///   - action: The action to perform when the user triggers the button.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		action: @escaping @MainActor () -> Void
 	) {
 		self.init(titleKey, systemImage: systemImage.rawValue, action: action)
@@ -112,7 +112,7 @@ public extension Button where
 		self.init(action: action, label: { Label(titleKey, image: image, bundle: bundle) })
 	}
 
-	// MARK: CustomSymbol
+	// MARK: CustomSymbolName
 
 	/// Creates a button that generates its label from a string and image name.
 	///
@@ -133,7 +133,7 @@ public extension Button where
 	///   - action: The action to perform when the user triggers the button.
 	nonisolated init<S>(
 		_ title: S,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		action: @escaping @MainActor () -> Void
 	) where
@@ -161,7 +161,7 @@ public extension Button where
 	///   - action: The action to perform when the user triggers the button.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		action: @escaping @MainActor () -> Void
 	) {
@@ -189,7 +189,7 @@ public extension Button where
 	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		role: ButtonRole?,
 		action: @escaping @MainActor () -> Void
 	) where
@@ -217,7 +217,7 @@ public extension Button where
 	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		role: ButtonRole?,
 		action: @escaping @MainActor () -> Void
 	) {
@@ -312,7 +312,7 @@ public extension Button where
 	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	nonisolated init<S>(
 		_ title: S,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		role: ButtonRole?,
 		action: @escaping @MainActor () -> Void
@@ -344,7 +344,7 @@ public extension Button where
 	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		role: ButtonRole?,
 		action: @escaping @MainActor () -> Void
@@ -374,7 +374,7 @@ public extension Button where
 	@available(iOS 17, macCatalyst 17, macOS 14, tvOS 17, visionOS 1, watchOS 10, *)
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		role: ButtonRole? = nil,
 		intent: some AppIntent
 	) where
@@ -402,7 +402,7 @@ public extension Button where
 	@available(iOS 17, macCatalyst 17, macOS 14, tvOS 17, visionOS 1, watchOS 10, *)
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		role: ButtonRole? = nil,
 		intent: some AppIntent
 	) {

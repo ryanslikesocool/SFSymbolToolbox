@@ -23,7 +23,7 @@ public extension SwiftUI.Menu where
 	///   - content: A group of menu items.
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		@ViewBuilder content: () -> Content
 	) where
 		S: StringProtocol
@@ -47,7 +47,7 @@ public extension SwiftUI.Menu where
 	///   - content: A group of menu items.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		@ViewBuilder content: () -> Content
 	) {
 		self.init(titleKey, systemImage: systemImage.rawValue, content: content)
@@ -109,7 +109,7 @@ public extension SwiftUI.Menu where
 		self.init(content: content, label: { Label(titleKey, image: image, bundle: bundle) })
 	}
 
-	// MARK: CustomSymbol
+	// MARK: CustomSymbolName
 
 	/// Creates a menu that generates its label from a string and image name.
 	///
@@ -130,7 +130,7 @@ public extension SwiftUI.Menu where
 	///   - content: A group of menu items.
 	nonisolated init<S>(
 		_ title: S,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		@ViewBuilder content: () -> Content
 	) where
@@ -158,7 +158,7 @@ public extension SwiftUI.Menu where
 	///   - content: A group of menu items.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		@ViewBuilder content: () -> Content
 	) {
@@ -186,7 +186,7 @@ public extension SwiftUI.Menu where
 	//	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	//	nonisolated init<S>(
 	//		_ title: S,
-	//		systemImage: SystemSymbol,
+	//		systemImage: SystemSymbolName,
 	//		@ViewBuilder content: () -> Content,
 	//		primaryAction: @escaping () -> Void
 	//	) where
@@ -213,7 +213,7 @@ public extension SwiftUI.Menu where
 	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		@ViewBuilder content: () -> Content,
 		primaryAction: @escaping () -> Void
 	) {
@@ -282,7 +282,7 @@ public extension SwiftUI.Menu where
 		self.init(content: content, label: { Label(titleKey, image: image, bundle: bundle) }, primaryAction: primaryAction)
 	}
 
-	// MARK: CustomSymbol
+	// MARK: CustomSymbolName
 
 	/// Creates a menu with a custom primary action that generates its label from a string and image name.
 	///
@@ -305,7 +305,7 @@ public extension SwiftUI.Menu where
 	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	nonisolated init<S>(
 		_ title: S,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		@ViewBuilder content: () -> Content,
 		primaryAction: @escaping () -> Void
@@ -336,7 +336,7 @@ public extension SwiftUI.Menu where
 	@available(iOS 15, macCatalyst 15, macOS 12, tvOS 15, watchOS 8, *)
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil,
 		@ViewBuilder content: () -> Content,
 		primaryAction: @escaping () -> Void

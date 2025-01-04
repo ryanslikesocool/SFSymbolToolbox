@@ -42,7 +42,7 @@ public extension SwiftUI.Label where
 		self.init(title: { Text(titleKey) }, icon: { Image(image, bundle: bundle) })
 	}
 
-	// MARK: CustomSymbol
+	// MARK: CustomSymbolName
 
 	/// Creates a label with an icon image and a title generated from a string.
 	///
@@ -54,7 +54,7 @@ public extension SwiftUI.Label where
 	///   Defaults to `nil`.
 	nonisolated init<S>(
 		_ title: S,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil
 	) where
 		S: StringProtocol
@@ -72,7 +72,7 @@ public extension SwiftUI.Label where
 	///   Defaults to `nil`.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		image: CustomSymbol,
+		image: CustomSymbolName,
 		bundle: Bundle? = nil
 	) {
 		self.init(titleKey, image: image.rawValue, bundle: bundle)
@@ -87,7 +87,7 @@ public extension SwiftUI.Label where
 	///   - systemImage: The name of the image resource to lookup.
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: SystemSymbol
+		systemImage: SystemSymbolName
 	) where
 		S: StringProtocol
 	{
@@ -101,7 +101,7 @@ public extension SwiftUI.Label where
 	///   - systemImage: The name of the image resource to lookup.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol
+		systemImage: SystemSymbolName
 	) {
 		self.init(titleKey, systemImage: systemImage.rawValue)
 	}

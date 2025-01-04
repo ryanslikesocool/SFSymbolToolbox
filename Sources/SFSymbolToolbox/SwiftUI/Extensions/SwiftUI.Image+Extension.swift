@@ -17,7 +17,7 @@ public extension SwiftUI.Image {
 	/// Use the SF Symbols app to look up the names of system symbol images.
 	@available(iOS 13, macCatalyst 13, macOS 11, tvOS 13, watchOS 6, *)
 	init(
-		systemName: SystemSymbol
+		systemName: SystemSymbolName
 	) {
 		self.init(systemName: systemName.rawValue)
 	}
@@ -40,7 +40,7 @@ public extension SwiftUI.Image {
 	///   Use the SF Symbols app to look up which symbols support variable values.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	init(
-		systemName: SystemSymbol,
+		systemName: SystemSymbolName,
 		variableValue: Double?
 	) {
 		self.init(systemName: systemName.rawValue, variableValue: variableValue)
@@ -56,7 +56,7 @@ public extension SwiftUI.Image {
 	///   If `nil`, SwiftUI uses the main `Bundle`.
 	///   Defaults to `nil`.
 	init(
-		_ name: CustomSymbol,
+		_ name: CustomSymbolName,
 		bundle: Bundle? = nil
 	) {
 		self.init(name.rawValue, bundle: bundle)
@@ -80,7 +80,7 @@ public extension SwiftUI.Image {
 	///   Defaults to `nil`.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	init(
-		_ name: CustomSymbol,
+		_ name: CustomSymbolName,
 		variableValue: Double?,
 		bundle: Bundle? = nil
 	) {
@@ -97,7 +97,7 @@ public extension SwiftUI.Image {
 	///   - label: The label associated with the image.
 	///   SwiftUI uses the label for accessibility.
 	init(
-		_ name: CustomSymbol,
+		_ name: CustomSymbolName,
 		bundle: Bundle? = nil,
 		label: Text
 	) {
@@ -124,7 +124,7 @@ public extension SwiftUI.Image {
 	///   SwiftUI uses the label for accessibility.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	init(
-		_ name: CustomSymbol,
+		_ name: CustomSymbolName,
 		variableValue: Double?,
 		bundle: Bundle? = nil,
 		label: Text
@@ -144,7 +144,7 @@ public extension SwiftUI.Image {
 	///   If `nil`, SwiftUI uses the main `Bundle`.
 	///   Defaults to `nil`.
 	init(
-		decorative name: CustomSymbol,
+		decorative name: CustomSymbolName,
 		bundle: Bundle? = nil
 	) {
 		self.init(decorative: name.rawValue, bundle: bundle)
@@ -170,7 +170,7 @@ public extension SwiftUI.Image {
 	///   Defaults to `nil`.
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	init(
-		decorative name: CustomSymbol,
+		decorative name: CustomSymbolName,
 		variableValue: Double?,
 		bundle: Bundle? = nil
 	) {

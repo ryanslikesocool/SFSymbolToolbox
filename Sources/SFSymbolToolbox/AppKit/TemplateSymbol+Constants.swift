@@ -1,7 +1,7 @@
 #if canImport(AppKit)
 import class AppKit.NSImage
 
-public extension TemplateSymbol {
+public extension TemplateSymbolName {
 	// MARK: A
 
 	/// The symbol for

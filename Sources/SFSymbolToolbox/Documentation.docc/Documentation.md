@@ -8,8 +8,8 @@ Extensions and conveniences for working with SF Symbols.
 - <doc:QuickStart>
 
 
-### Symbols
+### Concrete Symbol Names
 
-- ``CustomSymbol``
-- ``SystemSymbol``
-- ``TemplateSymbol``
+- ``CustomSymbolName``
+- ``SystemSymbolName``
+- ``TemplateSymbolName``

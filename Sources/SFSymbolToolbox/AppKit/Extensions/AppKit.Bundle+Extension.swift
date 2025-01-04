@@ -7,7 +7,7 @@ public extension Bundle {
 	/// - Parameter name: The name of the image resource file..
 	/// - Returns: A `URL` for the resource file or `nil` if the file was not found.
 	func urlForImageResource(
-		_ name: CustomSymbol
+		_ name: CustomSymbolName
 	) -> URL? {
 		urlForImageResource(name.rawValue)
 	}
@@ -19,7 +19,7 @@ public extension Bundle {
 	/// - Parameter name: The name of the image resource file, without any pathname information.
 	/// - Returns: The absolute pathname of the resource file or `nil` if the file is not found.
 	func pathForImageResource(
-		_ name: CustomSymbol
+		_ name: CustomSymbolName
 	) -> String? {
 		pathForImageResource(name.rawValue)
 	}
@@ -44,7 +44,7 @@ public extension Bundle {
 	/// - Parameter name: The name of the image resource file.
 	/// - Returns: The `NSImage` object associated with the specified name, or `nil` if no file is found.
 	func image(
-		forResource name: CustomSymbol
+		forResource name: CustomSymbolName
 	) -> NSImage? {
 		image(forResource: name.rawValue)
 	}

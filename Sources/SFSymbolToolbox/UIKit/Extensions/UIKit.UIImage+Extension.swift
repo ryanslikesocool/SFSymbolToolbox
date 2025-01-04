@@ -2,7 +2,7 @@
 import UIKit
 
 public extension UIImage {
-	// MARK: CustomSymbol
+	// MARK: CustomSymbolName
 
 	/// Creates an image object from the specified named asset.
 	///
@@ -134,7 +134,7 @@ public extension UIImage {
 		self.init(named: name.rawValue, in: bundle, variableValue: variableValue, configuration: configuration)
 	}
 
-	// MARK: SystemSymbol
+	// MARK: SystemSymbolName
 
 	/// Creates an image object that contains a system symbol image.
 	///

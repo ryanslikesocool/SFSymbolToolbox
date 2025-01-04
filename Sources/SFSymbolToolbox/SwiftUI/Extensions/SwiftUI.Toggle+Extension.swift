@@ -23,7 +23,7 @@ public extension SwiftUI.Toggle where
 	///   - isOn: A binding to a property that indicates whether the toggle is on or off.
 	nonisolated init<S>(
 		_ title: S,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		isOn: Binding<Bool>
 	) where
 		S: StringProtocol
@@ -47,7 +47,7 @@ public extension SwiftUI.Toggle where
 	///   - isOn: A binding to a property that indicates whether the toggle is on or off.
 	nonisolated init(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		isOn: Binding<Bool>
 	) {
 		self.init(titleKey, systemImage: systemImage.rawValue, isOn: isOn)
@@ -73,7 +73,7 @@ public extension SwiftUI.Toggle where
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	nonisolated init<S, C>(
 		_ title: S,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		sources: C,
 		isOn: KeyPath<C.Element, Binding<Bool>>
 	) where
@@ -101,7 +101,7 @@ public extension SwiftUI.Toggle where
 	@available(iOS 16, macCatalyst 16, macOS 13, tvOS 16, watchOS 9, *)
 	nonisolated init<C>(
 		_ titleKey: LocalizedStringKey,
-		systemImage: SystemSymbol,
+		systemImage: SystemSymbolName,
 		sources: C,
 		isOn: KeyPath<C.Element, Binding<Bool>>
 	) where

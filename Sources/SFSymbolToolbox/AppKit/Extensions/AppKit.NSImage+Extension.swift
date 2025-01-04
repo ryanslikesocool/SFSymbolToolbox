@@ -43,7 +43,7 @@ public extension NSImage {
 	/// - Parameter name: The name associated with the desired image.
 	/// This can be a name you assigned to the image or the name of an image file in your app bundle.
 	convenience init?(
-		named name: CustomSymbol
+		named name: CustomSymbolName
 	) {
 		self.init(named: name.rawValue)
 	}
@@ -58,7 +58,7 @@ public extension NSImage {
 	///   - description: The accessibility description for the symbol image, if any.
 	@available(macOS 11, *)
 	convenience init?(
-		systemSymbolName name: SystemSymbol,
+		systemSymbolName name: SystemSymbolName,
 		accessibilityDescription description: String?
 	) {
 		self.init(systemSymbolName: name.rawValue, accessibilityDescription: description)
@@ -77,7 +77,7 @@ public extension NSImage {
 	///   - description: The accessibility description for the symbol image, if any.
 	@available(macOS 13, *)
 	convenience init?(
-		systemSymbolName name: SystemSymbol,
+		systemSymbolName name: SystemSymbolName,
 		variableValue value: Double,
 		accessibilityDescription description: String?
 	) {
@@ -93,7 +93,7 @@ public extension NSImage {
 	///   - value: The value the system uses to customize the symbol’s content, between `0` and `1`.
 	@available(macOS 13, *)
 	convenience init?(
-		symbolName name: CustomSymbol,
+		symbolName name: CustomSymbolName,
 		variableValue value: Double
 	) {
 		self.init(symbolName: name.rawValue, variableValue: value)
@@ -109,7 +109,7 @@ public extension NSImage {
 	///   - value: The value the system uses to customize the symbol’s content, between `0` and `1`.
 	@available(macOS 13, *)
 	convenience init?(
-		symbolName name: CustomSymbol,
+		symbolName name: CustomSymbolName,
 		bundle: Bundle?,
 		variableValue value: Double
 	) {

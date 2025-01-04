@@ -20,7 +20,7 @@ public extension ImageResource {
 	///   If `nil`, SwiftUI uses the main `Bundle`.
 	///   Defaults to `nil`.
 	init(
-		name: CustomSymbol,
+		name: CustomSymbolName,
 		bundle: Bundle? = nil
 	) {
 		self.init(name: name.rawValue, bundle: bundle ?? .main)

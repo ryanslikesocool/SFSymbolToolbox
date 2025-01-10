@@ -32,7 +32,7 @@ public extension UIImage {
 	/// - Parameter name: The name of the image asset or file.
 	@available(iOS 2, macCatalyst 13.1, tvOS 9, visionOS 1, watchOS 2, *)
 	convenience init?(
-		named name: CustomSymbol
+		named name: CustomSymbolName
 	) {
 		self.init(named: name.rawValue)
 	}
@@ -64,7 +64,7 @@ public extension UIImage {
 	///   If you specify `nil`, this initializer uses the traits associated with the main screen.
 	@available(iOS 8, macCatalyst 13.1, tvOS 9, visionOS 1, *)
 	convenience init?(
-		named name: CustomSymbol,
+		named name: CustomSymbolName,
 		in bundle: Bundle?,
 		compatibleWith traitCollection: UITraitCollection?
 	) {
@@ -96,7 +96,7 @@ public extension UIImage {
 	///   For example, when requesting a custom symbol image, you can specify whether you want the thin, regular, or bold image variant.
 	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, watchOS 6, *)
 	convenience init?(
-		named name: CustomSymbol,
+		named name: CustomSymbolName,
 		in bundle: Bundle?,
 		with configuration: UIImage.Configuration?
 	) {
@@ -126,7 +126,7 @@ public extension UIImage {
 	///   - configuration: The image configuration the system applies to the image.
 	@available(iOS 16, macCatalyst 16, tvOS 16, visionOS 1, watchOS 9, *)
 	convenience init?(
-		named name: CustomSymbol,
+		named name: CustomSymbolName,
 		in bundle: Bundle? = nil,
 		variableValue: Double,
 		configuration: UIImage.Configuration? = nil
@@ -155,7 +155,7 @@ public extension UIImage {
 	/// - Parameter name: The name of the system symbol image.
 	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, watchOS 6, *)
 	convenience init?(
-		systemName name: SystemSymbol
+		systemName name: SystemSymbolName
 	) {
 		self.init(systemName: name.rawValue)
 	}
@@ -183,7 +183,7 @@ public extension UIImage {
 	///   If you specify `nil`, this initializer uses the traits associated with the main screen.
 	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, *)
 	convenience init?(
-		systemName name: SystemSymbol,
+		systemName name: SystemSymbolName,
 		compatibleWith traitCollection: UITraitCollection?
 	) {
 		self.init(systemName: name.rawValue, compatibleWith: traitCollection)
@@ -210,7 +210,7 @@ public extension UIImage {
 	///   - configuration: The image configuration the system applies to the image.
 	@available(iOS 13, macCatalyst 13.1, tvOS 13, visionOS 1, watchOS 6, *)
 	convenience init?(
-		systemName name: SystemSymbol,
+		systemName name: SystemSymbolName,
 		withConfiguration configuration: UIImage.Configuration?
 	) {
 		self.init(systemName: name.rawValue, withConfiguration: configuration)
@@ -238,7 +238,7 @@ public extension UIImage {
 	///   - configuration: The image configuration the system applies to the image.
 	@available(iOS 16, macCatalyst 16, tvOS 16, visionOS 1, watchOS 9, *)
 	convenience init?(
-		systemName name: SystemSymbol,
+		systemName name: SystemSymbolName,
 		variableValue: Double,
 		configuration: UIImage.Configuration? = nil
 	) {

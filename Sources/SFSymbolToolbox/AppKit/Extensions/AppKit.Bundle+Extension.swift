@@ -33,10 +33,10 @@ public extension Bundle {
 	/// Images requested using this method whose name ends in the word `Template` are automatically marked as template images.
 	///
 	/// This method does not look up images based on
-	/// [`setName(_:)`](https://developer.apple.com/documentation/appkit/nsimage/setname(_:))\
+	/// [`setName(_:)`]( https://developer.apple.com/documentation/appkit/nsimage/setname(_:) )
 	/// or get named system images.
 	/// Use
-	/// [`init(named:)`](https://developer.apple.com/documentation/appkit/nsimage/init(named:))\
+	/// [`init(named:)`]( https://developer.apple.com/documentation/appkit/nsimage/init(named:) )
 	/// for that purpose.
 	///
 	/// This method does not cache its search results.

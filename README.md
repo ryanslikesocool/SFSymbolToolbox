@@ -6,7 +6,8 @@ Extensions and conveniences for working with Apple's
 
 ## NOTICE
 
-**This package is under development and not considered production-ready.**<br/>
+**This package is under development and not considered production-ready.**
+<br/>
 Breaking changes are common, documentation is incomplete, and support is limited.  Use at your own risk.
 
 ---

@@ -6,26 +6,26 @@ public extension NSImage {
 	///
 	/// This method searches for named images in several places, returning the first image it finds matching the given name. The order of the search is as follows:
 	/// 1. Search for an object whose name was set explicitly using the
-	/// [`setName(_:)`](https://developer.apple.com/documentation/appkit/nsimage/setname(_:))\
+	/// [`setName(_:)`]( https://developer.apple.com/documentation/appkit/nsimage/setname(_:) )
 	/// method and currently resides in the image cache.
 	/// 2. Search the app’s main bundle for a file whose name matches the specified string. (For information on how the bundle is searched, see
-	/// "[Accessing a Bundle’s Contents](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104)"
+	/// "[Accessing a Bundle’s Contents]( https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104 )"
 	/// in
-	/// [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i).)
+	/// [Bundle Programming Guide]( https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i ).)
 	/// 3. Search the Application Kit framework for a shared image with the specified name.
 	///
 	/// When looking for files in the app bundle, it is better (but not required) to include the filename extension in the name parameter.
 	/// When naming an image with the
-	/// [`setName(_:)`](https://developer.apple.com/documentation/appkit/nsimage/setname(_:))\
+	/// [`setName(_:)`]( https://developer.apple.com/documentation/appkit/nsimage/setname(_:) )
 	/// method, it is convention not to include filename extensions in the names you specify.
 	/// That way, you can easily distinguish between images you have named explicitly and those you want to load from the app’s bundle.
 	///
 	/// One particularly useful image you can retrieve is your app’s icon.
 	/// This image is set by Cocoa automatically and accessible using the
-	/// [`applicationIconName`](https://developer.apple.com/documentation/appkit/nsimage/applicationiconname)
+	/// [`applicationIconName`]( https://developer.apple.com/documentation/appkit/nsimage/applicationiconname )
 	/// constant.
 	/// Icons for other apps can be obtained through the use of methods declared in the
-	/// [`NSWorkspace`](https://developer.apple.com/documentation/appkit/nsworkspace)
+	/// [`NSWorkspace`]( https://developer.apple.com/documentation/appkit/nsworkspace )
 	/// class.
 	/// You can also retrieve many of the standard system images using Cocoa defined constants;
 	/// for more information, see the `Image Template Constants`, `Sharing Permissions Named Images`, `System Entity Images`, `Toolbar Named Images`, and `View Type Template Images` sections for applicable constants.
@@ -37,7 +37,7 @@ public extension NSImage {
 	/// If all strong references to the image are subsequently removed, the object may be quietly removed from the cache.
 	/// Thus, if you plan to hold onto a returned image object, you must maintain a strong reference to it like you would any Cocoa object.
 	/// You can clear an image object from the cache explicitly by calling the object’s
-	/// [`setName(_:)`](https://developer.apple.com/documentation/appkit/nsimage/setname(_:))\
+	/// [`setName(_:)`]( https://developer.apple.com/documentation/appkit/nsimage/setname(_:) )
 	/// method and specifying `nil` for the image name.
 	///
 	/// - Parameter name: The name associated with the desired image.
@@ -51,7 +51,7 @@ public extension NSImage {
 	/// Creates a symbol image with the system symbol name and accessibility description you specify.
 	///
 	/// To look up the names of system symbol images, download the SF Symbols app from
-	/// [Apple Design Resources](https://developer.apple.com/design/resources/)\.
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
 	///
 	/// - Parameters:
 	///   - name: The name of the system symbol image.
@@ -69,7 +69,7 @@ public extension NSImage {
 	/// The `value` parameter is valid for symbols that support variable rendering.
 	///
 	/// To look up the names of system symbol images, download the SF Symbols app from
-	/// [Apple Design Resources](https://developer.apple.com/design/resources/)\.
+	/// [Apple Design Resources]( https://developer.apple.com/design/resources/ ).
 	///
 	/// - Parameters:
 	///   - name: The name of the system symbol image.

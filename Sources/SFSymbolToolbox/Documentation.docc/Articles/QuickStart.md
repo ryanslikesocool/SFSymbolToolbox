@@ -7,7 +7,7 @@ By default, the package provides the following concrete symbol types:
 - ``CustomSymbolName``
 - ``TemplateSymbolName``
 
-Additional symbol types can be created by implementing ``SymbolName``.
+Additional symbol types can be defined by implementing ``SymbolName``.
 
 
 ## Declaring Symbols

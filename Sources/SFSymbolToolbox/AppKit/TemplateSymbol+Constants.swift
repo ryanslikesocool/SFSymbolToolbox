@@ -38,11 +38,13 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`enterFullScreenTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/enterFullScreenTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var enterFullScreen: Self { Self(NSImage.enterFullScreenTemplateName) }
 
 	/// The symbol name for
 	/// [`exitFullScreenTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/exitFullScreenTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var exitFullScreen: Self { Self(NSImage.exitFullScreenTemplateName) }
 
 	// MARK: F
@@ -50,11 +52,13 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`flowViewTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/flowViewTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var flowView: Self { Self(NSImage.flowViewTemplateName) }
 
 	/// The symbol name for
 	/// [`followLinkFreestandingTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/followLinkFreestandingTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var followLinkFreestanding: Self { Self(NSImage.followLinkFreestandingTemplateName) }
 
 	// MARK: G
@@ -91,6 +95,7 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`iChatTheaterTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/iChatTheaterTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var iChatTheater: Self { Self(NSImage.iChatTheaterTemplateName) }
 
 	/// The symbol name for
@@ -101,6 +106,7 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`invalidDataFreestandingTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/invalidDataFreestandingTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var invalidDataFreestanding: Self { Self(NSImage.invalidDataFreestandingTemplateName) }
 
 	// MARK: L
@@ -108,6 +114,7 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`leftFacingTriangleTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/leftFacingTriangleTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var leftFacingTriangle: Self { Self(NSImage.leftFacingTriangleTemplateName) }
 
 	/// The symbol name for
@@ -130,11 +137,13 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`menuMixedStateTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/menuMixedStateTemplateName ).
 	@available(macOS 10.6, *)
+	@available(macCatalyst, unavailable)
 	static var menuMixedState: Self { Self(NSImage.menuMixedStateTemplateName) }
 
 	/// The symbol name for
 	/// [`menuOnStateTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/menuOnStateTemplateName ).
 	@available(macOS 10.6, *)
+	@available(macCatalyst, unavailable)
 	static var menuOnState: Self { Self(NSImage.menuOnStateTemplateName) }
 
 	// MARK: P
@@ -161,6 +170,7 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`refreshFreestandingTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/refreshFreestandingTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var refreshFreestanding: Self { Self(NSImage.refreshFreestandingTemplateName) }
 
 	/// The symbol name for
@@ -171,11 +181,13 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`revealFreestandingTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/revealFreestandingTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var revealFreestanding: Self { Self(NSImage.revealFreestandingTemplateName) }
 
 	/// The symbol name for
 	/// [`rightFacingTriangleTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/rightFacingTriangleTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var rightFacingTriangle: Self { Self(NSImage.rightFacingTriangleTemplateName) }
 
 	// MARK: S
@@ -193,6 +205,7 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`smartBadgeTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/smartBadgeTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var smartBadge: Self { Self(NSImage.smartBadgeTemplateName) }
 
 	/// The symbol name for
@@ -203,6 +216,7 @@ public extension TemplateSymbolName {
 	/// The symbol name for
 	/// [`stopProgressFreestandingTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/stopProgressFreestandingTemplateName ).
 	@available(macOS 10.5, *)
+	@available(macCatalyst, unavailable)
 	static var stopProgressFreestanding: Self { Self(NSImage.stopProgressFreestandingTemplateName) }
 }
 #endif

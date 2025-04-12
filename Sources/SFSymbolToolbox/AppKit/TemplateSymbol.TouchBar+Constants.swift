@@ -482,6 +482,7 @@ public extension TemplateSymbolName {
 		///
 		/// The symbol name for
 		/// [`touchBarPlayheadTemplateName`]( https://developer.apple.com/documentation/appkit/nsimage/touchBarPlayheadTemplateName ).
+		@available(macCatalyst, unavailable)
 		static var playhead: TemplateSymbolName { TemplateSymbolName(NSImage.touchBarPlayheadTemplateName) }
 
 		// MARK: Q

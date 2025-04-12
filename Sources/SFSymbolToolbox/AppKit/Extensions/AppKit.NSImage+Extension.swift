@@ -1,6 +1,7 @@
 #if canImport(AppKit)
 import AppKit
 
+@available(macCatalyst, unavailable)
 public extension NSImage {
 	/// Returns the image object associated with the specified name.
 	///

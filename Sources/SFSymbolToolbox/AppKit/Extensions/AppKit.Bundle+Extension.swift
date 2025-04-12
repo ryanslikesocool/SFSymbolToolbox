@@ -1,6 +1,7 @@
 #if canImport(AppKit)
 import AppKit
 
+@available(macCatalyst, unavailable)
 public extension Bundle {
 	/// Returns the location of the specified image resource as a `URL`.
 	///
